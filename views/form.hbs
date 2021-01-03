@@ -1,0 +1,16 @@
+<h1>Berry Biography</h1>
+<form action="/update" method="POST" name="form">
+<label for="name">Name: </label>
+    <input type="text" name="name" id="name" value="{{nameValue}}" disabled>
+    <label for="age">Age: </label>
+    <input type="text" id="age" name="age" value="{{ageValue}}">
+    
+    
+    <input type="radio" name="gender" id="female" value="female" {{{setChecked 'female' gender }}}>
+    <label for="female">Female </label>
+    <input type="radio" name="gender" id="male" value="male" {{{setChecked 'male' gender}}}>
+    <label for="male">Male</label>
+
+    <button type="submit">Save</button>
+    
+</form>
